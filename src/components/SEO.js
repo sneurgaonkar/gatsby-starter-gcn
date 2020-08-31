@@ -2,13 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-let sData = {
-  "@context": "http://www.schema.org",
-  "@type": "person",
-  "name": "Sunil Neurgaonkar",
-  "url": "http://neurgaonkar.com/"
-  };
-
 const SEO = ({ title, description, image }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -58,10 +51,27 @@ const SEO = ({ title, description, image }) => {
       {/* Structured Data */}
       <script type="application/ld+json">
         {`{
-        "@context": "http://www.schema.org",
-        "@type": "person",
-        "name": "Sunil Neurgaonkar",
-        "url": "http://neurgaonkar.com/"
+          "@context": "http://www.schema.org",
+          "@type": "person",
+          "name": "Sunil Neurgaonkar",
+          "jobTitle": "Growth",
+          "gender": "male",
+          "url": "http://neurgaonkar.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sunilneurgaonkar/",
+            "https://twitter.com/SNeurgaonkar",
+            "https://github.com/sneurgaonkar/",
+            "https://www.instagram.com/sneurgaonkar/"
+          ],
+          "image": "https://images.ctfassets.net/dcz28du396ad/3Vu3IwIDtBhqI7wqinmspn/1a1db4dbb54ec01c97599f185cf211cc/2019-01-28_02-removebg.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "addressCountry": "India"
+          },
+          "email": "sunil@neurgaonkar.com",
+          "nationality": "Indian"
         }`}
       </script>
     </Helmet>
