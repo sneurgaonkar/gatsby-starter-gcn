@@ -57,7 +57,12 @@ const SEO = ({ title, description, image }) => {
 
       {/* Structured Data */}
       <script type="application/ld+json">
-        JSON.stringify(sData);
+        {`{
+        "@context": "http://www.schema.org",
+        "@type": "person",
+        "name": "Sunil Neurgaonkar",
+        "url": "http://neurgaonkar.com/"
+        }`}
       </script>
     </Helmet>
   )
