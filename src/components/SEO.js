@@ -2,6 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
+let sData = {
+  "@context": "http://www.schema.org",
+  "@type": "person",
+  "name": "Sunil Neurgaonkar",
+  "url": "http://neurgaonkar.com/"
+  };
+
 const SEO = ({ title, description, image }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -47,6 +54,11 @@ const SEO = ({ title, description, image }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:image" content={metaImage} />
       <meta name="twitter:description" content={metaDescription} />
+
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        JSON.stringify(sData);
+      </script>
     </Helmet>
   )
 }
