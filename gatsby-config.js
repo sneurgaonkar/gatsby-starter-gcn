@@ -19,9 +19,9 @@ module.exports = {
   siteMetadata: {
     title: 'Sunil Neurgaonkar',
     description:
-      'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
+      'Growth @ Whatfix | Hosting SaaS Sessions Podcast',
     siteUrl: 'https://neurgaonkar.com',
-    image: '/images/share.jpg',
+    image: '/images/share.png',
     menuLinks: [
       {
         name: 'Home',
