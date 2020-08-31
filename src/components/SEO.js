@@ -54,7 +54,6 @@ const SEO = ({ title, description, image }) => {
           "@context": "http://www.schema.org",
           "@type": "person",
           "name": "Sunil Neurgaonkar",
-          "jobTitle": "Growth",
           "gender": "male",
           "url": "http://neurgaonkar.com/",
           "sameAs": [

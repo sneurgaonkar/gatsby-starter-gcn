@@ -21,7 +21,7 @@ module.exports = {
     description:
       'Growth @ Whatfix | Hosting SaaS Sessions Podcast',
     siteUrl: 'https://neurgaonkar.com',
-    image: '/images/share.png',
+    image: 'https://neurgaonkar.com/images/share.png',
     menuLinks: [
       {
         name: 'Home',
