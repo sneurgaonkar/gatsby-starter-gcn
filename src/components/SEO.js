@@ -18,7 +18,7 @@ const SEO = ({ title, description, image }) => {
     `
   )
 
-  const defaultImage = site.siteMetadata.siteUrl + site.siteMetadata.image
+  const defaultImage = `/images/share.png`
   const metaDescription = description || site.siteMetadata.description
   const metaImage = image || defaultImage
 
@@ -34,7 +34,7 @@ const SEO = ({ title, description, image }) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* General tags */}
-      <meta name="image" content={`/images/share.png`} />
+      <meta name="image" content={image} />
       <meta name="description" content={metaDescription} />
 
       {/* OpenGraph tags */}
