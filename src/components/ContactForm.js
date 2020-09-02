@@ -24,16 +24,16 @@ const Form = styled.form`
     border-radius: 2px;
     padding: 1em;
     &::-webkit-input-placeholder {
-      color: gray;
+      color: #121212;
     }
     &::-moz-placeholder {
-      color: gray;
+      color: #121212;
     }
     &:-ms-input-placeholder {
-      color: gray;
+      color: #121212;
     }
     &:-moz-placeholder {
-      color: gray;
+      color: #121212;
     }
     &:required {
       box-shadow: none;
