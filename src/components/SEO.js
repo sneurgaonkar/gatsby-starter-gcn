@@ -18,7 +18,7 @@ const SEO = ({ title, description, image }) => {
     `
   )
 
-  const defaultImage = `/images/share.png`
+  const defaultImage = site.siteMetadata.siteUrl + site.siteMetadata.image
   const metaDescription = description || site.siteMetadata.description
   const metaImage = image || defaultImage
 
