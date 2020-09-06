@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Sunil Neurgaonkar',
+        short_name: 'Sunil Neurgaonkar',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
