@@ -28,6 +28,10 @@ module.exports = {
         slug: '/',
       },
       {
+        name: 'What I Read',
+        slug: '/what-i-read/',
+      },
+      {
         name: 'Tools',
         slug: '/tools/',
       },
